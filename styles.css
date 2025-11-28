@@ -293,11 +293,14 @@ header {
 
 /* Logo fix */
 .hero-logo {
-  width: 90px;
+  width: 200px;      /* larger so we can confirm it's visible */
   height: auto;
-  margin: 0 auto 1.2rem;
   display: block;
+  margin: 0 auto 1rem;
+  border-radius: 0;  /* REMOVE the circle mask */
+  overflow: visible; /* ensure it doesn't get clipped */
 }
+
 
 /* Title */
 .hero-title {
