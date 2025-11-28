@@ -4,612 +4,170 @@
   <meta charset="UTF-8" />
   <title>by their side</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="by their side is a community-based initiative with Indo-Caribbean and South Asian youth in Peel Region, focused on preventing intimate partner violence through conversation, workshops, and care."
-  />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="page-shell">
-    <!-- SAFETY BAR -->
-    <div class="safety-bar">
-      <div class="inner safety-bar-inner">
-        <p class="safety-text">
-          <span>Need to leave this page quickly?</span> Click “Quick Exit” and consider clearing your browser history.
-        </p>
-        <button class="quick-exit-btn" type="button" onclick="quickExit()" aria-label="Leave this website quickly">
-          <span>Quick Exit</span> ↗
-        </button>
-      </div>
+<div class="page-shell">
+
+  <!-- SAFETY BAR -->
+  <div class="safety-bar">
+    <div class="inner safety-bar-inner">
+      <p class="safety-text"><span>Need to leave quickly?</span> Click “Quick Exit”.</p>
+      <button class="quick-exit-btn" onclick="quickExit()">Quick Exit ↗</button>
     </div>
-
-    <!-- SHARED DEVICE BANNER -->
-    <div class="shared-device-banner" id="sharedBanner">
-      <div class="shared-device-inner">
-        <p class="shared-device-text">
-          <strong>Viewing this on a shared device?</strong>
-          Someone else using this phone or computer may see that you visited this site.
-          <a class="shared-device-link" href="resources-digital-safety-guide.html">
-            Learn how to hide your activity.
-          </a>
-        </p>
-        <button class="banner-close-btn" type="button" onclick="closeSharedBanner()">Got it ✕</button>
-      </div>
-    </div>
-
-    <!-- HEADER / NAV -->
-    <header>
-      <div class="inner nav">
-        <a href="index.html" class="brand">
-          <div class="brand-logo">
-            <!-- update this path if you use a different folder/filename -->
-            <img src="assets/by-their-side-logo.png" alt="by their side logo" />
-          </div>
-          <div>
-            <div class="brand-text-main"><em>by their side</em></div>
-            <div class="brand-sub">Community-based IPV prevention in Peel</div>
-          </div>
-        </a>
-
-        <button class="nav-toggle" type="button" onclick="toggleNav()" aria-label="Toggle navigation menu">
-          Menu
-        </button>
-
-        <ul class="nav-links" id="navLinks">
-          <!-- About -->
-          <li class="nav-item">
-            <button class="nav-link-btn" type="button" onclick="toggleDropdown('dd-about')">
-              About ▾
-            </button>
-            <div class="nav-dropdown" id="dd-about">
-              <a href="about-our-story.html" class="nav-dropdown-link">
-                Our story
-                <span>How by their side began</span>
-              </a>
-              <a href="about-community.html" class="nav-dropdown-link">
-                Our community
-                <span>Indo-Caribbean & South Asian youth in Peel</span>
-              </a>
-              <a href="about-why-this-work-matters.html" class="nav-dropdown-link">
-                Why this work matters
-                <span>What we’re hearing from youth & families</span>
-              </a>
-              <a href="about-approach.html" class="nav-dropdown-link">
-                Our approach
-                <span>How we do prevention, together</span>
-              </a>
-            </div>
-          </li>
-
-          <!-- Youth -->
-          <li class="nav-item">
-            <button class="nav-link-btn" type="button" onclick="toggleDropdown('dd-youth')">
-              Youth ▾
-            </button>
-            <div class="nav-dropdown" id="dd-youth">
-              <a href="youth-healthy-relationships.html" class="nav-dropdown-link">
-                Healthy relationships
-                <span>What care, respect & choice can look like</span>
-              </a>
-              <a href="youth-coercive-control.html" class="nav-dropdown-link">
-                Coercive control
-                <span>When “love” feels like control</span>
-              </a>
-              <a href="youth-supporting-a-friend.html" class="nav-dropdown-link">
-                Supporting a friend
-                <span>Showing up without making things less safe</span>
-              </a>
-              <a href="youth-digital-safety.html" class="nav-dropdown-link">
-                Digital safety
-                <span>Phones, socials and boundaries</span>
-              </a>
-              <a href="youth-quiet-help.html" class="nav-dropdown-link">
-                Quiet ways to get help
-                <span>If you can’t talk openly yet</span>
-              </a>
-            </div>
-          </li>
-
-          <!-- Parents -->
-          <li class="nav-item">
-            <button class="nav-link-btn" type="button" onclick="toggleDropdown('dd-parents')">
-              Parents ▾
-            </button>
-            <div class="nav-dropdown" id="dd-parents">
-              <a href="parents-how-to-talk.html" class="nav-dropdown-link">
-                Talking with youth
-                <span>Opening conversations without shutting them down</span>
-              </a>
-              <a href="parents-warning-signs.html" class="nav-dropdown-link">
-                Warning signs
-                <span>What might signal control or fear</span>
-              </a>
-              <a href="parents-culture-communication.html" class="nav-dropdown-link">
-                Culture & communication
-                <span>Balancing safety, reputation & love</span>
-              </a>
-              <a href="parents-conversation-tools.html" class="nav-dropdown-link">
-                Conversation tools
-                <span>Simple questions & phrases to try</span>
-              </a>
-            </div>
-          </li>
-
-          <!-- Workshops -->
-          <li class="nav-item">
-            <button class="nav-link-btn" type="button" onclick="toggleDropdown('dd-workshops')">
-              Workshops ▾
-            </button>
-            <div class="nav-dropdown" id="dd-workshops">
-              <a href="workshops-for-schools.html" class="nav-dropdown-link">
-                For schools
-                <span>Classroom sessions & assemblies</span>
-              </a>
-              <a href="workshops-community-orgs.html" class="nav-dropdown-link">
-                Community programs
-                <span>Youth groups, mentorship & faith spaces</span>
-              </a>
-              <a href="workshops-request.html" class="nav-dropdown-link">
-                Request a workshop
-                <span>Tell us about your group</span>
-              </a>
-            </div>
-          </li>
-
-          <!-- Resources -->
-          <li class="nav-item">
-            <button class="nav-link-btn" type="button" onclick="toggleDropdown('dd-resources')">
-              Resources ▾
-            </button>
-            <div class="nav-dropdown" id="dd-resources">
-              <a href="resources-peel-supports.html" class="nav-dropdown-link">
-                Supports in Peel
-                <span>Where to reach out locally</span>
-              </a>
-              <a href="resources-coercive-control-guide.html" class="nav-dropdown-link">
-                Coercive control guide
-                <span>Examples, language & check-ins</span>
-              </a>
-              <a href="resources-digital-safety-guide.html" class="nav-dropdown-link">
-                Digital safety & hiding history
-                <span>Protecting yourself online</span>
-              </a>
-            </div>
-          </li>
-
-          <!-- Stay Connected -->
-          <li class="nav-item">
-            <button class="nav-link-primary" type="button" onclick="toggleDropdown('dd-connect')">
-              Stay connected ▾
-            </button>
-            <div class="nav-dropdown" id="dd-connect">
-              <a href="#connect" class="nav-dropdown-link">
-                Anonymous updates (form)
-                <span>Join our list with a non-identifying email</span>
-              </a>
-              <a href="stay-contact.html" class="nav-dropdown-link">
-                Contact
-                <span>Quiet ways to reach us</span>
-              </a>
-              <a href="stay-faq.html" class="nav-dropdown-link">
-                FAQ
-                <span>Common questions from youth & parents</span>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </header>
-
-    <!-- MAIN CONTENT -->
-    <main>
-      <!-- HERO -->
-      <section class="hero" id="top">
-        <div class="inner hero-grid">
-          <aside class="hero-card" aria-label="Project summary">
-            <div class="hero-card-title">What is by their side?</div>
-            <p class="hero-card-body">
-              <em>by their side</em> is a community project walking with Indo-Caribbean and South Asian
-              youth in Peel Region as they navigate love, culture, and safety. We co-create workshops,
-              conversations, and resources that make it easier to name harm early and imagine safer futures.
-            </p>
-            <div class="hero-stat-row">
-              <div class="hero-stat">
-                <strong>For youth</strong>
-                Spaces to talk about love, pressure, boundaries, and control without judgment.
-              </div>
-              <div class="hero-stat">
-                <strong>With community</strong>
-                Collaborations with schools, families, and local organizations, not just “for” them.
-              </div>
-            </div>
-          </aside>
-
-          <div>
-            <div class="hero-kicker">Peel Region • Indo-Caribbean & South Asian youth</div>
-            <h1 class="hero-title"><em>by their side</em></h1>
-            <p class="hero-sub">
-              <strong>We believe young people deserve relationships that feel gentle, respectful and free.</strong>
-              Intimate partner violence doesn’t only look like bruises — it can sound like jokes, rules, guilt,
-              and silence. Together, we’re learning how to notice those patterns early and support each other.
-            </p>
-
-            <div class="hero-actions">
-              <a href="#workshops" class="btn btn-primary">Upcoming workshops →</a>
-              <a href="#connect" class="btn btn-secondary">Stay in the loop quietly</a>
-            </div>
-
-            <p class="hero-safety-note">
-              If it’s not safe for you to follow or message publicly, you can use a non-identifying email on
-              our anonymous interest form below.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- ABOUT -->
-      <section id="about">
-        <div class="inner">
-          <div class="section-header">
-            <div class="section-title-block">
-              <div class="section-kicker">About the project</div>
-              <h2 class="section-title">Rooted in community, not just in a program</h2>
-            </div>
-            <p class="section-subtitle">
-              This project grows out of conversations with youth, parents, and community members who wanted a
-              softer, more honest way to talk about dating, culture, and harm.
-            </p>
-          </div>
-
-          <div class="three-column">
-            <article class="card">
-              <div class="card-tag">Our story</div>
-              <h3 class="card-title-main">Listening first</h3>
-              <p class="card-body">
-                <em>by their side</em> started with young people in Peel sharing what they were carrying: pressure
-                from family, fear of judgment, confusing ideas of “love”, and not knowing where to take their
-                questions.
-              </p>
-              <p class="card-body">
-                We listened, took notes, and built this work together instead of deciding for them.
-              </p>
-              <a href="about-our-story.html" class="nav-dropdown-link" style="margin-top:0.5rem;">
-                Read more about our story →
-              </a>
-            </article>
-
-            <article class="card">
-              <div class="card-tag">Our community</div>
-              <h3 class="card-title-main">Indo-Caribbean & South Asian youth in Peel</h3>
-              <p class="card-body">
-                We hold space for migration stories, aunties’ comments, “what will people say?”, and how all of
-                that sits inside relationships.
-              </p>
-              <p class="card-body">
-                We honour the joy and care in our cultures while gently challenging the pieces that make harm
-                easier to hide.
-              </p>
-              <a href="about-community.html" class="nav-dropdown-link" style="margin-top:0.5rem;">
-                Learn more about who we work with →
-              </a>
-            </article>
-
-            <article class="card">
-              <div class="card-tag">Our approach</div>
-              <h3 class="card-title-main">Prevention as everyday practice</h3>
-              <p class="card-body">
-                Our workshops are conversation-based, story-driven, and shaped by the people in the room. We talk
-                about small choices, not just extreme situations.
-              </p>
-              <a href="about-approach.html" class="nav-dropdown-link" style="margin-top:0.5rem;">
-                See how we run sessions →
-              </a>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- FOR YOUTH -->
-      <section id="youth">
-        <div class="inner">
-          <div class="section-header">
-            <div class="section-title-block">
-              <div class="section-kicker">For youth</div>
-              <h2 class="section-title">If you’re wondering, “Is this normal?”</h2>
-            </div>
-            <p class="section-subtitle">
-              You’re allowed to have questions about love, control, and what you actually want. You don’t need a
-              “reason big enough” to be uncomfortable.
-            </p>
-          </div>
-
-          <div class="split">
-            <div>
-              <p class="pill-label">In youth spaces, we talk about:</p>
-
-              <div class="bubble">
-                <strong>Love vs. control</strong><br />
-                When “caring” becomes checking your phone, choosing your clothes, or deciding who you’re allowed
-                to see.
-              </div>
-
-              <div class="bubble">
-                <strong>Coercive control</strong><br />
-                The quiet ways someone might make you feel guilty, scared, or small while calling it protection
-                or “just how relationships are”.
-              </div>
-
-              <div class="bubble">
-                <strong>Friends, group chats & screenshots</strong><br />
-                How to support each other without putting anyone at more risk.
-              </div>
-            </div>
-
-            <div>
-              <p class="pill-label">Ways to join in</p>
-              <p class="card-body">
-                Some youth show up to every workshop. Others just come once, listen quietly, and leave with one
-                sentence that sticks with them. All of that counts.
-              </p>
-              <ul class="card-list">
-                <li>Join an in-school workshop or community session</li>
-                <li>Use a non-identifying email to hear about upcoming events</li>
-                <li>Share our resources with a friend who might need them</li>
-              </ul>
-
-              <div class="chip-row">
-                <span class="chip">No pressure to share</span>
-                <span class="chip">Camera-optional spaces</span>
-                <span class="chip">You can just listen</span>
-              </div>
-
-              <a href="youth-healthy-relationships.html" class="nav-dropdown-link" style="margin-top:0.7rem;display:inline-block;">
-                Explore youth topics →
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- FOR PARENTS -->
-      <section id="parents">
-        <div class="inner">
-          <div class="section-header">
-            <div class="section-title-block">
-              <div class="section-kicker">For parents & caregivers</div>
-              <h2 class="section-title">Walking with young people, not against them</h2>
-            </div>
-            <p class="section-subtitle">
-              Many parents want their children to be safe but worry about “saying the wrong thing”. Our work is
-              about learning together, not blaming.
-            </p>
-          </div>
-
-          <div class="split">
-            <div>
-              <article class="card">
-                <div class="card-tag">Conversations at home</div>
-                <h3 class="card-title-main">Talking about relationships without a fight</h3>
-                <p class="card-body">
-                  We co-create questions and phrases that open doors instead of shutting them. You don’t have to
-                  be an expert to be a safe person.
-                </p>
-                <a href="parents-how-to-talk.html" class="nav-dropdown-link" style="margin-top:0.4rem;">
-                  Read conversation ideas →
-                </a>
-              </article>
-            </div>
-
-            <div>
-              <article class="card">
-                <div class="card-tag">Community spaces</div>
-                <h3 class="card-title-main">Sessions for parents & families</h3>
-                <p class="card-body">
-                  We offer gentle, practical workshops that name what many of us have experienced — without
-                  shaming past generations.
-                </p>
-                <a href="parents-warning-signs.html" class="nav-dropdown-link" style="margin-top:0.4rem;">
-                  Learn about early warning signs →
-                </a>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- WORKSHOPS -->
-      <section id="workshops">
-        <div class="inner">
-          <div class="section-header">
-            <div class="section-title-block">
-              <div class="section-kicker">Workshops & collaborations</div>
-              <h2 class="section-title">Bringing these conversations into your space</h2>
-            </div>
-            <p class="section-subtitle">
-              We work with schools, youth programs, and community organizations across Peel Region. Sessions are
-              shaped with you, not dropped in from the outside.
-            </p>
-          </div>
-
-          <div class="three-column">
-            <article class="card">
-              <div class="card-tag">For schools</div>
-              <h3 class="card-title-main">Classroom & assembly sessions</h3>
-              <p class="card-body">
-                Workshops for high school and post-secondary students that fit into existing wellbeing, equity,
-                or civics programming.
-              </p>
-              <a href="workshops-for-schools.html" class="nav-dropdown-link" style="margin-top:0.4rem;">
-                Details for schools →
-              </a>
-            </article>
-
-            <article class="card">
-              <div class="card-tag">For community orgs</div>
-              <h3 class="card-title-main">Youth & parent programming</h3>
-              <p class="card-body">
-                Dialogues and series for youth groups, mentorship programs, and faith spaces, co-designed with
-                your team.
-              </p>
-              <a href="workshops-community-orgs.html" class="nav-dropdown-link" style="margin-top:0.4rem;">
-                Details for community programs →
-              </a>
-            </article>
-
-            <article class="card">
-              <div class="card-tag">Bring us to you</div>
-              <h3 class="card-title-main">Request a workshop</h3>
-              <p class="card-body">
-                Share a bit about who you are, the young people you work with, and what you’re hoping our time
-                together will do.
-              </p>
-              <a href="workshops-request.html" class="nav-dropdown-link" style="margin-top:0.4rem;">
-                Request a session →
-              </a>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- RESOURCES -->
-      <section id="resources">
-        <div class="inner">
-          <div class="section-header">
-            <div class="section-title-block">
-              <div class="section-kicker">Resources</div>
-              <h2 class="section-title">If you or someone you know needs support</h2>
-            </div>
-            <p class="section-subtitle">
-              We’re not an emergency or crisis service. If you’re in immediate danger, please call 911 or your
-              local emergency number.
-            </p>
-          </div>
-
-          <div class="split">
-            <div>
-              <article class="card">
-                <div class="card-tag">In Peel & Ontario</div>
-                <h3 class="card-title-main">Crisis & support lines</h3>
-                <ul class="card-list">
-                  <li><strong>Assaulted Women’s Helpline (Ontario):</strong> 1-866-863-0511</li>
-                  <li><strong>Kids Help Phone (Canada):</strong> 1-800-668-6868 or text CONNECT to 686868</li>
-                  <li><strong>Punjabi Community Health Services (PCHS):</strong> search “PCHS Peel” for local info</li>
-                  <li>Local shelters and crisis lines in Peel Region</li>
-                </ul>
-                <p class="card-body">
-                  You can search “intimate partner violence support Peel Region” in a private browser for more
-                  options that fit your situation.
-                </p>
-                <a href="resources-peel-supports.html" class="nav-dropdown-link" style="margin-top:0.4rem;">
-                  More supports in Peel →
-                </a>
-              </article>
-            </div>
-
-            <div>
-              <article class="card">
-                <div class="card-tag">Digital safety</div>
-                <h3 class="card-title-main">Using this site a bit more safely</h3>
-                <p class="card-body">
-                  If someone else checks your phone or laptop, they may see this page in your history. There are
-                  small steps you can take to make that less likely.
-                </p>
-                <a href="resources-digital-safety-guide.html" class="nav-dropdown-link" style="margin-top:0.4rem;">
-                  Read the digital safety guide →
-                </a>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CONNECT / ANONYMOUS UPDATES -->
-      <section id="connect">
-        <div class="inner">
-          <div class="section-header">
-            <div class="section-title-block">
-              <div class="section-kicker">Stay connected</div>
-              <h2 class="section-title">Hear about workshops & resources quietly</h2>
-            </div>
-            <p class="section-subtitle">
-              If it isn’t safe to follow us openly, you can share a non-identifying email to receive updates
-              about upcoming sessions and new resources.
-            </p>
-          </div>
-
-          <div class="contact-grid">
-            <div>
-              <p class="contact-note">
-                <strong>Anonymous interest form:</strong> We recommend using an email that doesn’t include your
-                full name (for example, a school email or a separate account) and avoiding details that could
-                identify you on shared devices.
-              </p>
-              <p class="contact-note">
-                When you tap the button below, you’ll be taken to a short form where you can:
-              </p>
-              <ul class="card-list">
-                <li>Sign up for workshop & resource updates</li>
-                <li>Tell us what topics you want covered</li>
-                <li>Let us know if you’d like youth-only or parent-focused spaces</li>
-              </ul>
-
-              <div style="margin-top: 1rem;">
-                <!-- TODO: replace # with your actual Google Form link -->
-                <a href="#" class="btn btn-primary">
-                  Open anonymous interest form
-                </a>
-              </div>
-            </div>
-
-            <div class="contact-card">
-              <div class="contact-item-label">If you’d rather not use social media</div>
-              <p class="contact-note" style="margin-top: 0.3rem;">
-                You can reach out quietly, without commenting or following any public account.
-              </p>
-
-              <div class="contact-methods">
-                <div>
-                  <div class="contact-item-label">Email</div>
-                  <div class="contact-item-value">
-                    <!-- Replace with your project email -->
-                    <a href="mailto:hello@bytheyside.ca">hello@bytheyside.ca</a>
-                  </div>
-                </div>
-
-                <div>
-                  <div class="contact-item-label">Private Instagram</div>
-                  <div class="contact-item-value">
-                    <!-- Replace with your handle -->
-                    You can DM our private account
-                    <a href="https://instagram.com/yourhandle" target="_blank" rel="noreferrer">@yourhandle</a>
-                    if that feels safer than engaging with a public page.
-                  </div>
-                </div>
-              </div>
-
-              <p class="contact-note" style="margin-top:0.7rem;">
-                If you’re helping build this website, paste your real Google Form link into the code where the
-                <code>href="#"</code> is in the button above.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="footer-inner">
-        <div>© <span id="year"></span> <em>by their side</em>. All rights reserved.</div>
-        <div class="footer-links">
-          <a href="#top">Back to top</a>
-          <a href="resources-digital-safety-guide.html">Digital safety</a>
-          <a href="stay-contact.html">Contact</a>
-        </div>
-      </div>
-    </footer>
   </div>
 
-  <script src="main.js"></script>
+  <!-- SHARED DEVICE BANNER -->
+  <div class="shared-device-banner" id="sharedBanner">
+    <div class="shared-device-inner">
+      <p class="shared-device-text">
+        <strong>Using a shared device?</strong> Someone may see this in your history.
+        <a href="resources-digital-safety-guide.html">Learn how to hide visits.</a>
+      </p>
+      <button class="banner-close-btn" onclick="closeSharedBanner()">✕</button>
+    </div>
+  </div>
+
+  <!-- HEADER / NAV -->
+  <header>
+    <div class="inner nav">
+      <a href="index.html" class="brand">
+        <div class="brand-logo">
+          <img src="assets/by-their-side-logo.png" alt="by their side logo" />
+        </div>
+        <div>
+          <div class="brand-text-main"><em>by their side</em></div>
+          <div class="brand-sub">Community-based IPV prevention</div>
+        </div>
+      </a>
+      <button class="nav-toggle" onclick="toggleNav()">Menu</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li class="nav-item"><a class="nav-link" href="about-our-story.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="youth-healthy-relationships.html">Youth</a></li>
+        <li class="nav-item"><a class="nav-link" href="parents-how-to-talk.html">Parents</a></li>
+        <li class="nav-item"><a class="nav-link" href="workshops-for-schools.html">Workshops</a></li>
+        <li class="nav-item"><a class="nav-link" href="resources-peel-supports.html">Resources</a></li>
+        <li class="nav-item">
+          <a class="nav-link-primary" href="#connect">Stay connected</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO (soft and minimal) -->
+  <section class="hero hero-soft">
+    <div class="inner hero-inner">
+      <h1 class="hero-title"><em>by their side</em></h1>
+      <p class="hero-sub">
+        A gentle, community-rooted space with Indo-Caribbean and South Asian youth in Peel —
+        learning how to name harm early, imagine safer futures, and support each other with care.
+      </p>
+
+      <div class="hero-actions">
+        <a href="workshops-request.html" class="btn btn-primary">Request a workshop →</a>
+        <a href="#connect" class="btn btn-secondary">Sign up quietly</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLOURED STATEMENT SECTION -->
+  <section class="colour-block lavender">
+    <div class="inner">
+      <p class="block-text">
+        This work grows from conversations — not from assuming what young people “need”.
+        Every workshop, guide, and resource is created *with* community.
+      </p>
+    </div>
+  </section>
+
+  <!-- ABOUT PREVIEW -->
+  <section class="section">
+    <div class="inner">
+      <h2 class="section-title">About the project</h2>
+      <p class="section-sub">
+        by their side began through quiet conversations with youth navigating culture,
+        family expectations, identity, and relationships.
+      </p>
+
+      <div class="tile-row">
+        <a class="tile" href="about-our-story.html">Our story</a>
+        <a class="tile" href="about-community.html">Our community</a>
+        <a class="tile" href="about-approach.html">Our approach</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- YOUTH PREVIEW -->
+  <section class="section soft-bg">
+    <div class="inner">
+      <h2 class="section-title">For youth</h2>
+      <p class="section-sub">
+        A space to talk about love, boundaries, pressure, and control — without judgment.
+      </p>
+
+      <div class="tile-row">
+        <a class="tile" href="youth-healthy-relationships.html">Healthy relationships</a>
+        <a class="tile" href="youth-coercive-control.html">Coercive control</a>
+        <a class="tile" href="youth-quiet-help.html">Quiet ways to get help</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARENTS PREVIEW -->
+  <section class="section">
+    <div class="inner">
+      <h2 class="section-title">For parents & caregivers</h2>
+      <p class="section-sub">
+        Tools to open conversation gently — with love, honesty, and cultural care.
+      </p>
+
+      <div class="tile-row">
+        <a class="tile" href="parents-how-to-talk.html">Talking with youth</a>
+        <a class="tile" href="parents-warning-signs.html">Signs to look for</a>
+        <a class="tile" href="parents-conversation-tools.html">Conversation tools</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESOURCES PREVIEW -->
+  <section class="section soft-bg">
+    <div class="inner">
+      <h2 class="section-title">Resources</h2>
+      <p class="section-sub">
+        Digital safety, local supports, and guidance for recognizing control.
+      </p>
+
+      <div class="tile-row">
+        <a class="tile" href="resources-peel-supports.html">Supports in Peel</a>
+        <a class="tile" href="resources-coercive-control-guide.html">Coercive control guide</a>
+        <a class="tile" href="resources-digital-safety-guide.html">Digital safety</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONNECT -->
+  <section id="connect" class="section lavender-border">
+    <div class="inner">
+      <h2 class="section-title">Stay connected</h2>
+      <p class="section-sub">
+        Share a non-identifying email to receive quiet updates on workshops and resources.
+      </p>
+
+      <a href="#" class="btn btn-primary">Open interest form</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© <span id="year"></span> by their side</span>
+      <div class="footer-links">
+        <a href="#top">Back to top</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="main.js"></script>
 </body>
 </html>
