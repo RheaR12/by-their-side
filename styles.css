@@ -278,10 +278,6 @@ header {
 }
 
 /* ------------------ HERO ------------------ */
-<p>LOGO TEST BELOW</p>
-<img src="assets/by-their-side-logo.png" width="200" />
-<p>LOGO TEST ABOVE</p>
-
 
 .hero {
   background: radial-gradient(circle at top left, #f4d4ff 0, #fef3ea 40%, #fef3ea 100%);
