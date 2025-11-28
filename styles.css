@@ -205,8 +205,8 @@ header {
 .brand-text-main {
   font-family: "Poppins", system-ui, sans-serif;
   font-size: 1.1rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+  letter-spacing: 0;
+  text-transform: none;
   font-weight: 500;
   color: var(--brand-lavender);
 }
