@@ -278,6 +278,10 @@ header {
 }
 
 /* ------------------ HERO ------------------ */
+<p>LOGO TEST BELOW</p>
+<img src="assets/by-their-side-logo.png" width="200" />
+<p>LOGO TEST ABOVE</p>
+
 
 .hero {
   background: radial-gradient(circle at top left, #f4d4ff 0, #fef3ea 40%, #fef3ea 100%);
@@ -650,13 +654,12 @@ footer {
 }
 
 .hero-logo {
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: auto;
   margin: 0 auto 1rem;
-  border-radius: 999px;
-  box-shadow: var(--shadow-soft);
-  background: white;
+  display: block;
 }
+
 
 .hero-title {
   text-align: center;
