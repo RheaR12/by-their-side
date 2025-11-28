@@ -721,3 +721,54 @@ footer {
   margin: 0 auto;
   color: var(--accent-purple);
 }
+/* ENFORCE LOWERCASE FOR HEADINGS/TITLES */
+.hero-title,
+.section-title,
+.nav-link,
+.nav-link-primary,
+.brand-text-main,
+.page-title {
+  text-transform: none !important;
+}
+
+/* HERO BACKGROUND FIX */
+.hero-clean {
+  background: #f8f7f4 !important;
+}
+
+/* CENTER TEXT CONSISTENTLY */
+.section-centered,
+.section-centered * {
+  text-align: center !important;
+}
+
+/* MASCULINE-NEUTRAL ACCENT */
+:root {
+  --accent-mist-blue: #8ba6b1;
+}
+
+/* ADD SLIGHT MIST-BLUE TOUCH TO TILES */
+.tile--soft {
+  background: #ffffff;
+  border: 1px solid rgba(139, 166, 177, 0.4); /* uses mist-blue */
+}
+
+.tile--soft:hover {
+  background: #f0f4f6; /* light mist-blue wash */
+}
+
+/* MAKE CTAs LESS “FEMININE” */
+.btn-primary {
+  border-color: var(--accent-mist-blue) !important;
+  color: var(--accent-blue) !important;
+}
+
+.btn-secondary {
+  border-color: var(--accent-mist-blue) !important;
+}
+
+/* IMPROVE SUBTLE MASCULINE FEELING ON HEADINGS */
+.section-title,
+.hero-title {
+  color: var(--accent-blue) !important;
+}
