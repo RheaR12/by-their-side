@@ -772,8 +772,7 @@ footer {
 .hero-title {
   color: var(--accent-blue) !important;
 }
-/* Force centering for the 'our grounding' paragraph */
-.section--peach .section-sub {
+.section-sub {
   text-align: center !important;
   margin-left: auto !important;
   margin-right: auto !important;
