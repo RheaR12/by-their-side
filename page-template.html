@@ -7,85 +7,89 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="page-shell">
-    <!-- safety + shared device banners (same as index) -->
-    <div class="safety-bar">
-      <div class="inner safety-bar-inner">
-        <p class="safety-text">
-          <span>Need to leave this page quickly?</span> Click “Quick Exit” and consider clearing your browser history.
-        </p>
-        <button class="quick-exit-btn" type="button" onclick="quickExit()">
-          <span>Quick Exit</span> ↗
-        </button>
-      </div>
+<div class="page-shell">
+
+  <!-- SAFETY + BANNER (same everywhere) -->
+  <div class="safety-bar">
+    <div class="inner safety-bar-inner">
+      <p class="safety-text"><span>Need to leave quickly?</span> Click “Quick Exit”.</p>
+      <button class="quick-exit-btn" type="button" onclick="quickExit()">Quick Exit ↗</button>
     </div>
-
-    <div class="shared-device-banner" id="sharedBanner">
-      <div class="shared-device-inner">
-        <p class="shared-device-text">
-          <strong>Viewing this on a shared device?</strong>
-          Someone else using this phone or computer may see that you visited this site.
-          <a class="shared-device-link" href="resources-digital-safety-guide.html">
-            Learn how to hide your activity.
-          </a>
-        </p>
-        <button class="banner-close-btn" type="button" onclick="closeSharedBanner()">Got it ✕</button>
-      </div>
-    </div>
-
-    <!-- header / nav (exact same as index) -->
-    <!-- You can copy the <header>...</header> block from index.html and paste it here -->
-    <!-- START HEADER -->
-    <!-- (for brevity, not re-pasting the whole header in this snippet) -->
-    <!-- END HEADER -->
-
-    <main>
-      <div class="inner">
-        <header class="page-header">
-          <div class="page-kicker">Section label (e.g., About)</div>
-          <h1 class="page-title">Page title goes here</h1>
-          <p class="page-intro">
-            A gentle, community-centered introduction for this page. Keep it short, in plain language, and
-            grounded in the realities of youth / families you’re working with.
-          </p>
-        </header>
-
-        <div class="page-content">
-          <section class="page-section">
-            <h3>Subheading</h3>
-            <p>
-              This is where the main text for this part of the page goes. Think of it as a soft conversation, not
-              a policy document. You can include examples, short stories, or questions people can ask themselves.
-            </p>
-          </section>
-
-          <section class="page-section">
-            <h3>Another subheading</h3>
-            <p>
-              Use bullet points when it feels helpful:
-            </p>
-            <ul>
-              <li>Point one in everyday language</li>
-              <li>Point two, possibly an example or reflection question</li>
-              <li>Point three – how this connects back to safety and care</li>
-            </ul>
-          </section>
-        </div>
-      </div>
-    </main>
-
-    <footer>
-      <div class="footer-inner">
-        <div>© <span id="year"></span> <em>by their side</em>. All rights reserved.</div>
-        <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="resources-digital-safety-guide.html">Digital safety</a>
-          <a href="stay-contact.html">Contact</a>
-        </div>
-      </div>
-    </footer>
   </div>
 
-  <script src="main.js"></script>
+  <div class="shared-device-banner" id="sharedBanner">
+    <div class="shared-device-inner">
+      <p class="shared-device-text">
+        <strong>Using a shared device?</strong>
+        Someone may see this page in your history.
+        <a href="resources-digital-safety-guide.html">Learn how to hide visits.</a>
+      </p>
+      <button class="banner-close-btn" type="button" onclick="closeSharedBanner()">✕</button>
+    </div>
+  </div>
+
+  <!-- HEADER / NAV (same as index) -->
+  <header>
+    <div class="inner nav">
+      <a href="index.html" class="brand">
+        <div class="brand-logo">
+          <img src="assets/by-their-side-logo.png" alt="by their side logo" />
+        </div>
+        <div>
+          <div class="brand-text-main"><em>by their side</em></div>
+          <div class="brand-sub">Community-based IPV prevention in Peel</div>
+        </div>
+      </a>
+
+      <button class="nav-toggle" type="button" onclick="toggleNav()">Menu</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a class="nav-link" href="about-our-story.html">About</a></li>
+        <li><a class="nav-link" href="youth-healthy-relationships.html">Youth</a></li>
+        <li><a class="nav-link" href="parents-how-to-talk.html">Parents</a></li>
+        <li><a class="nav-link" href="workshops-for-schools.html">Workshops</a></li>
+        <li><a class="nav-link" href="resources-peel-supports.html">Resources</a></li>
+        <li><a class="nav-link-primary" href="index.html#connect">Stay connected</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="inner">
+      <header class="page-header">
+        <div class="page-kicker">Section label</div>
+        <h1 class="page-title">Page title here</h1>
+        <p class="page-intro">
+          Soft, community-centered intro text goes here. Imagine speaking to one young person or one parent,
+          not a large institution.
+        </p>
+      </header>
+
+      <div class="page-content">
+        <section class="page-section">
+          <h3>Subheading</h3>
+          <p>Section text...</p>
+        </section>
+
+        <section class="page-section">
+          <h3>Another subheading</h3>
+          <p>More text...</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© <span id="year"></span> <em>by their side</em></span>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="resources-digital-safety-guide.html">Digital safety</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="main.js"></script>
 </body>
 </html>
