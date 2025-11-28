@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <title>by their side</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="by their side is a community-rooted project with Indo-Caribbean and South Asian youth in Peel, gently opening conversations about love, culture, and safety."
+  />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -13,7 +17,7 @@
   <div class="safety-bar">
     <div class="inner safety-bar-inner">
       <p class="safety-text"><span>Need to leave quickly?</span> Click “Quick Exit”.</p>
-      <button class="quick-exit-btn" onclick="quickExit()">Quick Exit ↗</button>
+      <button class="quick-exit-btn" type="button" onclick="quickExit()">Quick Exit ↗</button>
     </div>
   </div>
 
@@ -21,10 +25,11 @@
   <div class="shared-device-banner" id="sharedBanner">
     <div class="shared-device-inner">
       <p class="shared-device-text">
-        <strong>Using a shared device?</strong> Someone may see this in your history.
+        <strong>Using a shared device?</strong>
+        Someone may see this page in your history.
         <a href="resources-digital-safety-guide.html">Learn how to hide visits.</a>
       </p>
-      <button class="banner-close-btn" onclick="closeSharedBanner()">✕</button>
+      <button class="banner-close-btn" type="button" onclick="closeSharedBanner()">✕</button>
     </div>
   </div>
 
@@ -37,31 +42,31 @@
         </div>
         <div>
           <div class="brand-text-main"><em>by their side</em></div>
-          <div class="brand-sub">Community-based IPV prevention</div>
+          <div class="brand-sub">Community-based IPV prevention in Peel</div>
         </div>
       </a>
-      <button class="nav-toggle" onclick="toggleNav()">Menu</button>
+
+      <button class="nav-toggle" type="button" onclick="toggleNav()">Menu</button>
 
       <ul class="nav-links" id="navLinks">
-        <li class="nav-item"><a class="nav-link" href="about-our-story.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="youth-healthy-relationships.html">Youth</a></li>
-        <li class="nav-item"><a class="nav-link" href="parents-how-to-talk.html">Parents</a></li>
-        <li class="nav-item"><a class="nav-link" href="workshops-for-schools.html">Workshops</a></li>
-        <li class="nav-item"><a class="nav-link" href="resources-peel-supports.html">Resources</a></li>
-        <li class="nav-item">
-          <a class="nav-link-primary" href="#connect">Stay connected</a>
-        </li>
+        <li><a class="nav-link" href="about-our-story.html">About</a></li>
+        <li><a class="nav-link" href="youth-healthy-relationships.html">Youth</a></li>
+        <li><a class="nav-link" href="parents-how-to-talk.html">Parents</a></li>
+        <li><a class="nav-link" href="workshops-for-schools.html">Workshops</a></li>
+        <li><a class="nav-link" href="resources-peel-supports.html">Resources</a></li>
+        <li><a class="nav-link-primary" href="#connect">Stay connected</a></li>
       </ul>
     </div>
   </header>
 
-  <!-- HERO (soft and minimal) -->
-  <section class="hero hero-soft">
+  <!-- HERO -->
+  <section class="hero">
     <div class="inner hero-inner">
       <h1 class="hero-title"><em>by their side</em></h1>
       <p class="hero-sub">
         A gentle, community-rooted space with Indo-Caribbean and South Asian youth in Peel —
-        learning how to name harm early, imagine safer futures, and support each other with care.
+        listening to stories of love, pressure, family, and faith, and slowly learning how to
+        name harm without losing care.
       </p>
 
       <div class="hero-actions">
@@ -71,98 +76,116 @@
     </div>
   </section>
 
-  <!-- COLOURED STATEMENT SECTION -->
-  <section class="colour-block lavender">
+  <!-- STATEMENT SECTION (lavender wash) -->
+  <section class="section section--lavender-soft">
     <div class="inner">
       <p class="block-text">
-        This work grows from conversations — not from assuming what young people “need”.
-        Every workshop, guide, and resource is created *with* community.
+        This work doesn’t come from guessing what young people “should” learn. It comes from
+        long conversations in hallways, group chats, mandirs, masjids, gurdwaras, and living rooms —
+        where love, fear, and hope all sit in the same story.
       </p>
     </div>
   </section>
 
-  <!-- ABOUT PREVIEW -->
+  <!-- ABOUT PREVIEW (rose block) -->
+  <section class="section section--rose">
+    <div class="inner">
+      <div class="section-header">
+        <h2 class="section-title">About the project</h2>
+        <p class="section-sub">
+          <em>by their side</em> began when youth shared that they were carrying questions about
+          dating, culture, and safety with nowhere soft to put them. This project is one way of
+          saying, “You don’t have to hold that alone.”
+        </p>
+      </div>
+
+      <div class="tile-row">
+        <a class="tile tile--peach" href="about-our-story.html">Our story</a>
+        <a class="tile tile--lavender" href="about-community.html">Our community</a>
+        <a class="tile tile--rose" href="about-approach.html">Our approach</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- YOUTH PREVIEW (cream) -->
+  <section class="section section--cream">
+    <div class="inner">
+      <div class="section-header">
+        <h2 class="section-title">For youth</h2>
+        <p class="section-sub">
+          A space to wonder, “Is this normal?” without being shamed. Together we talk about love,
+          boundaries, jealousy, control, and the quiet ways harm can hide in our communities.
+        </p>
+      </div>
+
+      <div class="tile-row">
+        <a class="tile tile--lavender" href="youth-healthy-relationships.html">Healthy relationships</a>
+        <a class="tile tile--peach" href="youth-coercive-control.html">Coercive control</a>
+        <a class="tile tile--rose" href="youth-quiet-help.html">Quiet ways to get help</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARENTS PREVIEW (peach base) -->
   <section class="section">
     <div class="inner">
-      <h2 class="section-title">About the project</h2>
-      <p class="section-sub">
-        by their side began through quiet conversations with youth navigating culture,
-        family expectations, identity, and relationships.
-      </p>
+      <div class="section-header">
+        <h2 class="section-title">For parents & caregivers</h2>
+        <p class="section-sub">
+          Many parents are trying to hold safety, reputation, and love all at once. We offer small,
+          practical tools to open conversations gently, without losing connection.
+        </p>
+      </div>
 
       <div class="tile-row">
-        <a class="tile" href="about-our-story.html">Our story</a>
-        <a class="tile" href="about-community.html">Our community</a>
-        <a class="tile" href="about-approach.html">Our approach</a>
+        <a class="tile tile--peach" href="parents-how-to-talk.html">Talking with youth</a>
+        <a class="tile tile--lavender" href="parents-warning-signs.html">Warning signs</a>
+        <a class="tile tile--rose" href="parents-conversation-tools.html">Conversation tools</a>
       </div>
     </div>
   </section>
 
-  <!-- YOUTH PREVIEW -->
-  <section class="section soft-bg">
+  <!-- RESOURCES PREVIEW (cream) -->
+  <section class="section section--cream">
     <div class="inner">
-      <h2 class="section-title">For youth</h2>
-      <p class="section-sub">
-        A space to talk about love, boundaries, pressure, and control — without judgment.
-      </p>
-
-      <div class="tile-row">
-        <a class="tile" href="youth-healthy-relationships.html">Healthy relationships</a>
-        <a class="tile" href="youth-coercive-control.html">Coercive control</a>
-        <a class="tile" href="youth-quiet-help.html">Quiet ways to get help</a>
+      <div class="section-header">
+        <h2 class="section-title">Resources</h2>
+        <p class="section-sub">
+          We’re not an emergency service, but we share gentle guides, local supports, and digital
+          safety tips for people who are quietly trying to figure out what feels off.
+        </p>
       </div>
-    </div>
-  </section>
-
-  <!-- PARENTS PREVIEW -->
-  <section class="section">
-    <div class="inner">
-      <h2 class="section-title">For parents & caregivers</h2>
-      <p class="section-sub">
-        Tools to open conversation gently — with love, honesty, and cultural care.
-      </p>
 
       <div class="tile-row">
-        <a class="tile" href="parents-how-to-talk.html">Talking with youth</a>
-        <a class="tile" href="parents-warning-signs.html">Signs to look for</a>
-        <a class="tile" href="parents-conversation-tools.html">Conversation tools</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- RESOURCES PREVIEW -->
-  <section class="section soft-bg">
-    <div class="inner">
-      <h2 class="section-title">Resources</h2>
-      <p class="section-sub">
-        Digital safety, local supports, and guidance for recognizing control.
-      </p>
-
-      <div class="tile-row">
-        <a class="tile" href="resources-peel-supports.html">Supports in Peel</a>
-        <a class="tile" href="resources-coercive-control-guide.html">Coercive control guide</a>
-        <a class="tile" href="resources-digital-safety-guide.html">Digital safety</a>
+        <a class="tile tile--rose" href="resources-peel-supports.html">Supports in Peel</a>
+        <a class="tile tile--peach" href="resources-coercive-control-guide.html">Coercive control guide</a>
+        <a class="tile tile--lavender" href="resources-digital-safety-guide.html">Digital safety & hiding history</a>
       </div>
     </div>
   </section>
 
   <!-- CONNECT -->
-  <section id="connect" class="section lavender-border">
+  <section id="connect" class="section section-connect">
     <div class="inner">
-      <h2 class="section-title">Stay connected</h2>
-      <p class="section-sub">
-        Share a non-identifying email to receive quiet updates on workshops and resources.
-      </p>
+      <div class="section-header">
+        <h2 class="section-title">Stay connected, quietly</h2>
+        <p class="section-sub">
+          If it isn’t safe to follow publicly, you can use a non-identifying email to hear about
+          upcoming workshops and new resources.
+        </p>
+      </div>
 
+      <!-- TODO: replace # with your Google Form link -->
       <a href="#" class="btn btn-primary">Open interest form</a>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
-      <span>© <span id="year"></span> by their side</span>
+      <span>© <span id="year"></span> <em>by their side</em></span>
       <div class="footer-links">
-        <a href="#top">Back to top</a>
+        <a href="resources-digital-safety-guide.html">Digital safety</a>
       </div>
     </div>
   </footer>
