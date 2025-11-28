@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Our story • by their side</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="page-shell">
+
+  <!-- safety + banner -->
+  <div class="safety-bar">
+    <div class="inner safety-bar-inner">
+      <p class="safety-text"><span>Need to leave quickly?</span> Click “Quick Exit”.</p>
+      <button class="quick-exit-btn" type="button" onclick="quickExit()">Quick Exit ↗</button>
+    </div>
+  </div>
+
+  <div class="shared-device-banner" id="sharedBanner">
+    <div class="shared-device-inner">
+      <p class="shared-device-text">
+        <strong>Using a shared device?</strong>
+        Someone may see this page in your history.
+        <a href="resources-digital-safety-guide.html">Learn how to hide visits.</a>
+      </p>
+      <button class="banner-close-btn" type="button" onclick="closeSharedBanner()">✕</button>
+    </div>
+  </div>
+
+  <!-- header / nav (same as index) -->
+  <header>
+    <div class="inner nav">
+      <a href="index.html" class="brand">
+        <div class="brand-logo">
+          <img src="assets/by-their-side-logo.png" alt="by their side logo" />
+        </div>
+        <div>
+          <div class="brand-text-main"><em>by their side</em></div>
+          <div class="brand-sub">Community-based IPV prevention in Peel</div>
+        </div>
+      </a>
+
+      <button class="nav-toggle" type="button" onclick="toggleNav()">Menu</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a class="nav-link" href="about-our-story.html">About</a></li>
+        <li><a class="nav-link" href="youth-healthy-relationships.html">Youth</a></li>
+        <li><a class="nav-link" href="parents-how-to-talk.html">Parents</a></li>
+        <li><a class="nav-link" href="workshops-for-schools.html">Workshops</a></li>
+        <li><a class="nav-link" href="resources-peel-supports.html">Resources</a></li>
+        <li><a class="nav-link-primary" href="index.html#connect">Stay connected</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="inner">
+      <header class="page-header">
+        <div class="page-kicker">About</div>
+        <h1 class="page-title">Our story</h1>
+        <p class="page-intro">
+          <em>by their side</em> grew out of quiet conversations with Indo-Caribbean and South Asian youth in Peel
+          who were trying to make sense of love, family, and safety. This project is one way of honouring those
+          stories and refusing to leave people alone with their questions.
+        </p>
+      </header>
+
+      <div class="page-content">
+        <section class="page-section">
+          <h3>Listening before planning</h3>
+          <p>
+            Before there were workshops, slides, or handouts, there were young people sharing what they were
+            carrying: feeling watched, feeling guilty, feeling responsible for other people’s moods, and feeling
+            unsure if what they were experiencing “counted” as harm.
+          </p>
+          <p>
+            We listened in classrooms, during office hours, on walks home, at community events, and in between
+            meetings. Many of the stories sounded different on the surface, but they held the same questions:
+            <em>“Is this normal?”</em>, <em>“Do I deserve better?”</em>, <em>“What will my family say?”</em>.
+          </p>
+        </section>
+
+        <section class="page-section">
+          <h3>Rooted in Indo-Caribbean & South Asian community</h3>
+          <p>
+            Peel holds so many migration stories, aunties’ warnings, WhatsApp forwards, and unspoken family
+            histories. It also holds joy, faith, and deep care. <em>by their side</em> does not ask anyone to leave
+            their culture at the door; it asks what becomes possible when we talk honestly about the parts of our
+            stories that make harm easier to hide.
+          </p>
+        </section>
+
+        <section class="page-section">
+          <h3>Prevention as everyday practice</h3>
+          <p>
+            We are not a crisis line or a one-time assembly. Our work is about the little moments: a question a
+            teacher decides to ask, a friend choosing to listen instead of tease, a parent trying a different
+            sentence than the one they heard growing up.
+          </p>
+          <p>
+            Every workshop is an experiment in doing prevention differently — more grounded in community, more
+            honest about power, and more gentle with the people in the room.
+          </p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© <span id="year"></span> <em>by their side</em></span>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="resources-digital-safety-guide.html">Digital safety</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
