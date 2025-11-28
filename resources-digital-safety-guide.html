@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Digital safety & hiding your history • by their side</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <!-- SAFETY BAR -->
+    <div class="safety-bar">
+      <div class="inner safety-bar-inner">
+        <p class="safety-text">
+          <span>Need to leave this page quickly?</span> Click “Quick Exit” and consider clearing your browser history.
+        </p>
+        <button class="quick-exit-btn" type="button" onclick="quickExit()">
+          <span>Quick Exit</span> ↗
+        </button>
+      </div>
+    </div>
+
+    <!-- SHARED DEVICE BANNER -->
+    <div class="shared-device-banner" id="sharedBanner">
+      <div class="shared-device-inner">
+        <p class="shared-device-text">
+          <strong>Viewing this on a shared device?</strong>
+          Someone else using this phone or computer may see that you visited this site.
+          The tips on this page can help reduce that risk, but they aren’t perfect.
+        </p>
+        <button class="banner-close-btn" type="button" onclick="closeSharedBanner()">Got it ✕</button>
+      </div>
+    </div>
+
+    <!-- HEADER (copy from index) -->
+    <!-- You can paste the full header markup from index.html here -->
+    <!-- For brevity, not duplicating it in this snippet -->
+
+    <main>
+      <div class="inner">
+        <header class="page-header">
+          <div class="page-kicker">Resources</div>
+          <h1 class="page-title">Digital safety & hiding your history</h1>
+          <p class="page-intro">
+            These tips are for people who are worried that someone else might check their phone or computer.
+            They’re not perfect, but they can make it a little bit harder for someone to see that you visited
+            <em>by their side</em> or other support sites.
+          </p>
+          <div class="warning-box" style="margin-top:0.9rem;">
+            If the person you’re worried about has access to your passwords, regularly checks your devices, or
+            uses monitoring apps, it may be difficult or unsafe to fully hide what you’re doing online. Your
+            safety comes first.
+          </div>
+        </header>
+
+        <div class="page-content">
+          <section class="page-section">
+            <h3>1. Use a private or “incognito” window if possible</h3>
+            <p>
+              Many browsers have a mode that doesn’t save history in the same way as normal windows. The name
+              looks a bit different depending on what you use:
+            </p>
+            <ul>
+              <li><strong>Chrome:</strong> “New Incognito window”</li>
+              <li><strong>Safari (Mac/iPhone):</strong> “Private Browsing”</li>
+              <li><strong>Firefox:</strong> “New Private Window”</li>
+              <li><strong>Edge:</strong> “InPrivate window”</li>
+            </ul>
+            <p>
+              If you can, open this site in one of those windows. When you’re done, close the whole window, not
+              just the tab.
+            </p>
+          </section>
+
+          <section class="page-section">
+            <h3>2. Clear this site from your recent history</h3>
+            <p>
+              If you didn’t use private mode, you may still be able to remove this page from your history. This
+              is different on every device, but usually:
+            </p>
+            <ul>
+              <li>Open your browser’s history (often under a menu called “History” or the clock icon).</li>
+              <li>Look for a list of sites you’ve visited.</li>
+              <li>If you see our website’s name or link, choose “Remove”, “Delete”, or “Clear”.</li>
+            </ul>
+            <p>
+              Be careful: if you normally have a long history and suddenly delete everything, that might look
+              unusual to someone who checks your device a lot. Deleting only a few items can draw less attention.
+            </p>
+          </section>
+
+          <section class="page-section">
+            <h3>3. Close tabs and apps when you’re done</h3>
+            <p>
+              After you finish reading, close this tab and any other tabs that might show related searches. On a
+              phone, also close the browser from your list of open apps so it doesn’t pop up when someone taps
+              “recent apps”.
+            </p>
+          </section>
+
+          <section class="page-section">
+            <h3>4. Consider using a safer device if you can</h3>
+            <p>
+              If it doesn’t feel safe to use your own phone or laptop, it might be safer to:
+            </p>
+            <ul>
+              <li>Use a friend’s device that the person doesn’t have access to</li>
+              <li>Use a school or library computer (and log out afterwards)</li>
+              <li>Access information through a trusted adult who can hold it for you</li>
+            </ul>
+          </section>
+
+          <section class="page-section">
+            <h3>5. Save information in low-risk ways</h3>
+            <p>
+              If you’re worried someone might see screenshots or notes on your device, you can:
+            </p>
+            <ul>
+              <li>Remember just the phrase <em>“by their side”</em> and search for us later when it’s safer.</li>
+              <li>Write down a phone number or website and give it to a trusted friend to keep.</li>
+              <li>Bookmark this page only if you’re sure no one checks your bookmarks.</li>
+            </ul>
+          </section>
+
+          <section class="page-section">
+            <h3>6. If you feel unsafe right now</h3>
+            <p>
+              If reading this page has helped you realize that you might be in danger, you can consider reaching
+              out to:
+            </p>
+            <ul>
+              <li>
+                <strong>Assaulted Women’s Helpline (Ontario):</strong> 1-866-863-0511
+              </li>
+              <li>
+                <strong>Kids Help Phone (Canada):</strong> 1-800-668-6868 or text CONNECT to 686868
+              </li>
+              <li>
+                A local shelter or crisis line in Peel Region
+              </li>
+            </ul>
+            <p>
+              You’re also allowed to simply sit with this information for now. Noticing that something doesn’t
+              feel right is already an important step.
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <div>© <span id="year"></span> <em>by their side</em>. All rights reserved.</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="resources-peel-supports.html">Supports in Peel</a>
+          <a href="stay-contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
