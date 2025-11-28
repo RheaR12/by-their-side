@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Coercive control • by their side</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="page-shell">
+
+  <!-- safety + banner -->
+  <div class="safety-bar">
+    <div class="inner safety-bar-inner">
+      <p class="safety-text"><span>Need to leave quickly?</span> Click “Quick Exit”.</p>
+      <button class="quick-exit-btn" type="button" onclick="quickExit()">Quick Exit ↗</button>
+    </div>
+  </div>
+
+  <div class="shared-device-banner" id="sharedBanner">
+    <div class="shared-device-inner">
+      <p class="shared-device-text">
+        <strong>Using a shared device?</strong>
+        Someone may see this page in your history.
+        <a href="resources-digital-safety-guide.html">Learn how to hide visits.</a>
+      </p>
+      <button class="banner-close-btn" type="button" onclick="closeSharedBanner()">✕</button>
+    </div>
+  </div>
+
+  <!-- header / nav -->
+  <header>
+    <div class="inner nav">
+      <a href="index.html" class="brand">
+        <div class="brand-logo">
+          <img src="assets/by-their-side-logo.png" alt="by their side logo" />
+        </div>
+        <div>
+          <div class="brand-text-main"><em>by their side</em></div>
+          <div class="brand-sub">Community-based IPV prevention in Peel</div>
+        </div>
+      </a>
+
+      <button class="nav-toggle" type="button" onclick="toggleNav()">Menu</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a class="nav-link" href="about-our-story.html">About</a></li>
+        <li><a class="nav-link" href="youth-healthy-relationships.html">Youth</a></li>
+        <li><a class="nav-link" href="parents-how-to-talk.html">Parents</a></li>
+        <li><a class="nav-link" href="workshops-for-schools.html">Workshops</a></li>
+        <li><a class="nav-link" href="resources-peel-supports.html">Resources</a></li>
+        <li><a class="nav-link-primary" href="index.html#connect">Stay connected</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <div class="inner">
+      <header class="page-header">
+        <div class="page-kicker">For youth</div>
+        <h1 class="page-title">Coercive control</h1>
+        <p class="page-intro">
+          Coercive control is when someone slowly takes over your choices, time, and freedom while still
+          calling it love. It can feel confusing, because it doesn’t always look like yelling or hitting —
+          sometimes it sounds like “I’m just worried about you.”
+        </p>
+      </header>
+
+      <div class="page-content">
+        <section class="page-section">
+          <h3>What coercive control can feel like</h3>
+          <p>
+            Coercive control often shows up in small, repeated actions that leave you feeling smaller over time.
+            You might notice that:
+          </p>
+          <ul>
+            <li>You feel nervous about how they will react to what you wear, who you talk to, or where you go.</li>
+            <li>You find yourself changing your behaviour to avoid them getting upset.</li>
+            <li>They say they’re the only one who really understands you, and everyone else is against you.</li>
+            <li>You feel guilty for wanting time alone, or for spending time with friends and family.</li>
+          </ul>
+        </section>
+
+        <section class="page-section">
+          <h3>Controlling what you wear</h3>
+          <p>
+            Clothing is a common way control shows up. It might sound like:
+          </p>
+          <ul>
+            <li>“I don’t like it when other people look at you.”</li>
+            <li>“If you dress like that, you’re asking for attention.”</li>
+            <li>“Change, or I’m not going out with you.”</li>
+          </ul>
+          <p>
+            In many of our communities, clothing is already tied to culture, religion, and “what people will say.”
+            That makes it easy for someone to use those ideas to control you: saying they’re just “protecting your
+            reputation” or “keeping the family name safe.”
+          </p>
+          <p>
+            Wanting to dress in a way that feels like you — while still being connected to your culture and faith —
+            is not something to be ashamed of. You deserve to feel like your clothes are a choice, not a battlefield.
+          </p>
+        </section>
+
+        <section class="page-section">
+          <h3>When control is disguised as care</h3>
+          <p>
+            Sometimes control hides inside sentences that sound caring:
+          </p>
+          <ul>
+            <li>“Text me when you get home so I know you’re safe.” (becomes “Why didn’t you text back in 2 minutes?”)</li>
+            <li>“I just don’t trust your friends.” (becomes “You’re not allowed to see them anymore.”)</li>
+            <li>“Wear something more modest.” (becomes “I decide what you wear.”)</li>
+          </ul>
+          <p>
+            You are allowed to ask yourself: <em>“If this is care, why do I feel smaller?”</em>
+          </p>
+        </section>
+
+        <section class="page-section">
+          <h3>Checking in with yourself</h3>
+          <p>Here are a few gentle questions you can sit with:</p>
+          <ul>
+            <li>Do I feel like I have to hide parts of myself to keep this relationship calm?</li>
+            <li>Is it getting easier or harder to talk to my friends and family?</li>
+            <li>When I imagine saying “no” to them, what do I feel in my body?</li>
+          </ul>
+          <p>
+            If these questions bring up a lot, you don’t have to figure it out alone. You can share this page with a
+            trusted friend, elder, teacher, or counsellor and talk about it together.
+          </p>
+        </section>
+
+        <section class="page-section">
+          <h3>If you’re worried about someone else</h3>
+          <p>
+            If you notice a friend’s partner constantly commenting on their clothes, checking their phone, or getting
+            angry when they spend time with you, it might be a sign of coercive control. You don’t have to have the
+            perfect words. Simply saying:
+          </p>
+          <p><em>“I’ve noticed a few things that worry me. If you ever want to talk, I’m here.”</em></p>
+          <p>can be a powerful start.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© <span id="year"></span> <em>by their side</em></span>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="resources-peel-supports.html">Supports in Peel</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
