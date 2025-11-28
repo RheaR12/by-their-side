@@ -772,8 +772,35 @@ footer {
 .hero-title {
   color: var(--accent-blue) !important;
 }
-.section-sub {
+/* Center ALL section subtitles + intro text across the site */
+.section-sub,
+.page-intro,
+.page-section p,
+.page-section ul {
   text-align: center !important;
   margin-left: auto !important;
   margin-right: auto !important;
 }
+
+/* Center all section headers */
+.section-title,
+.page-title,
+.page-kicker {
+  text-align: center !important;
+}
+
+/* Center link rows and button rows */
+.link-row,
+.hero-actions,
+.tile-grid,
+.section-centered {
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+/* Ensure grid tiles stay centered */
+.tile-grid {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
