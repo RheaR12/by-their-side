@@ -277,61 +277,48 @@ header {
   box-shadow: var(--focus-ring);
 }
 
-/* ------------------ HERO ------------------ */
+/* ------------------ CLEAN HERO (updated) ------------------ */
 
-.hero {
-  background: radial-gradient(circle at top left, #f4d4ff 0, #fef3ea 40%, #fef3ea 100%);
-  padding: 3.5rem 0 3.8rem;
+.hero-clean {
+  background: #f8f7f4; /* cream */
+  padding: 4rem 0 3.5rem;
   position: relative;
-  overflow: hidden;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  width: 380px;
-  height: 380px;
-  border-radius: 999px;
-  background: radial-gradient(circle, #a980ac33 0, transparent 70%);
-  top: -120px;
-  right: -60px;
-  z-index: 0;
+  text-align: center;
 }
 
 .hero-inner {
-  position: relative;
-  z-index: 1;
-  text-align: center;
   max-width: 720px;
   margin: 0 auto;
 }
 
+/* Logo fix */
+.hero-logo {
+  width: 90px;
+  height: auto;
+  margin: 0 auto 1.2rem;
+  display: block;
+}
+
+/* Title */
 .hero-title {
   font-family: "Poppins", system-ui, sans-serif;
   font-size: clamp(2.4rem, 4vw + 1rem, 3.1rem);
-  margin: 0 0 0.7rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--brand-lavender);
+  margin: 0 0 1rem;
+  letter-spacing: 0;          /* remove uppercase spacing */
+  text-transform: none;       /* force lowercase */
+  color: var(--accent-mist-blue); /* gender-neutral accent */
 }
 
-.hero-title em {
-  font-style: italic;
-}
-
+/* Subtitle */
 .hero-sub {
   font-size: 1rem;
   color: var(--ink-muted);
   line-height: 1.8;
-  margin: 0 auto;
+  margin: 0.5rem auto 1.4rem;
   max-width: 40rem;
 }
 
-.hero-sub strong {
-  color: var(--ink-main);
-  font-weight: 600;
-}
-
+/* CTA buttons */
 .hero-actions {
   margin-top: 1.6rem;
   display: flex;
@@ -339,6 +326,7 @@ header {
   flex-wrap: wrap;
   gap: 0.8rem;
 }
+
 
 /* buttons */
 
