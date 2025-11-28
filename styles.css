@@ -642,3 +642,82 @@ footer {
     flex-direction: column;
   }
 }
+/* --- CLEAN HERO --- */
+.hero-clean {
+  background: var(--bg-cream);
+  text-align: center;
+  padding: 4rem 0 3rem;
+}
+
+.hero-logo {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 1rem;
+  border-radius: 999px;
+  box-shadow: var(--shadow-soft);
+  background: white;
+}
+
+.hero-title {
+  text-align: center;
+}
+
+.hero-sub {
+  max-width: 480px;
+  margin: 0.8rem auto 1.4rem;
+}
+
+/* --- PEACH SECTION --- */
+.section--peach {
+  background: var(--bg-peach);
+  text-align: center;
+}
+
+/* --- CENTER EVERYTHING --- */
+.section-centered {
+  text-align: center;
+}
+
+.link-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 1.4rem;
+}
+
+.soft-link {
+  font-size: 0.95rem;
+  color: var(--accent-purple);
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+/* --- TILE GRID --- */
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tile--soft {
+  background: #fffdfb;
+  border: 1px solid rgba(200, 180, 180, 0.3);
+}
+
+.tile--soft:hover {
+  background: #f7ece7;
+}
+
+/* --- LAVENDER WASH --- */
+.section--lavender-wash {
+  background: #a980ac12;
+}
+
+.community-line {
+  font-size: 1.1rem;
+  max-width: 540px;
+  margin: 0 auto;
+  color: var(--accent-purple);
+}
