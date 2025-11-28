@@ -800,3 +800,29 @@ footer {
   margin-left: auto !important;
   margin-right: auto !important;
 }
+/* Balanced, gender-neutral background pattern */
+
+/* Mist blue wash (medium) */
+.section--mist {
+  background: rgba(139, 166, 177, 0.12) !important;
+}
+
+/* Mist blue wash (lighter) */
+.section--mist-light {
+  background: rgba(139, 166, 177, 0.07) !important;
+}
+
+/* Cream background */
+.section--cream {
+  background: #f8f7f4 !important;
+}
+
+/* Peach tint */
+.section--peach {
+  background: #fef3ea !important;
+}
+
+/* White background */
+.section--white {
+  background: #ffffff !important;
+}
