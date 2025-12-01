@@ -294,47 +294,61 @@ main {
 
 /* ------------------ CLEAN HERO (updated) ------------------ */
 
-.hero-clean {
-  background: #f8f7f4; /* cream */
-  padding: 4rem 0 3.5rem;
+.hero-clean.hero-home {
+  background: #f8f7f4;
+  padding: 3.8rem 0 3.2rem;
   position: relative;
-  text-align: center;
+  overflow: visible;
 }
 
-.hero-inner {
-  max-width: 720px;
-  margin: 0 auto;
+.hero-clean.hero-home::before {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  background: radial-gradient(circle, rgba(139, 166, 177, 0.25) 0%, transparent 70%);
+  top: -80px;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 0;
+  border-radius: 999px;
 }
 
-/* Logo fix */
 .hero-logo {
-  width: 200px;      /* larger so we can confirm it's visible */
+  width: 160px;
   height: auto;
-  display: block;
   margin: 0 auto 1rem;
-  border-radius: 0;  /* REMOVE the circle mask */
-  overflow: visible; /* ensure it doesn't get clipped */
+  display: block;
+  position: relative;
+  z-index: 2;
 }
+
 
 
 /* Title */
 .hero-title {
   font-family: "Poppins", system-ui, sans-serif;
-  font-size: clamp(2.4rem, 4vw + 1rem, 3.1rem);
-  margin: 0 0 1rem;
-  letter-spacing: 0;          /* remove uppercase spacing */
-  text-transform: none;       /* force lowercase */
-  color: var(--accent-mist-blue); /* gender-neutral accent */
+  font-size: 2.6rem;
+  margin: 0.4rem 0 0.6rem;
+  color: var(--accent-blue);
+  text-transform: none;
+  letter-spacing: 0;
+  position: relative;
+  z-index: 2;
 }
 
-/* Subtitle */
+
 .hero-sub {
+  max-width: 480px;
+  margin: 0.5rem auto 1.5rem;
   font-size: 1rem;
   color: var(--ink-muted);
-  line-height: 1.8;
-  margin: 0.5rem auto 1.4rem;
-  max-width: 40rem;
+  line-height: 1.7;
+  position: relative;
+  z-index: 2;
+  text-align: center;
 }
+
 
 /* CTA buttons */
 .hero-actions {
@@ -348,19 +362,20 @@ main {
 
 /* buttons */
 
-.btn {
-  border-radius: var(--radius-pill);
-  border: 1px solid transparent;
-  padding: 0.7rem 1.4rem;
-  font-size: 0.82rem;
-  font-weight: 600;
+.btn-hero {
+  background: #002b3d;
+  color: white;
+  border-radius: 999px;
+  padding: 0.65rem 1.4rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
-  letter-spacing: 0.14em;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  cursor: pointer;
-  background: transparent;
+  letter-spacing: 0.12em;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0, 43, 61, 0.18);
+}
+
+.btn-hero:hover {
+  background: #00384d;
 }
 
 .btn-primary {
